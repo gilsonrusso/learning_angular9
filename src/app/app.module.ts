@@ -15,12 +15,24 @@ import { MatCardModule } from "@angular/material/card";
 import { HeaderComponent } from "./components/template/header/header.component";
 import { FooterComponent } from "./components/template/footer/footer.component";
 import { NavComponent } from "./components/template/nav/nav.component";
-import { HomeComponent } from './views/home/home.component';
-import { ProductCrudComponent } from './views/product-crud/product-crud.component';
-import { ProductCreateComponent } from './components/product/product-create/product-create.component';
+import { HomeComponent } from "./views/home/home.component";
+import { ProductCrudComponent } from "./views/product-crud/product-crud.component";
+import { ProductCreateComponent } from "./components/product/product-create/product-create.component";
+import { RedDirective } from "./directives/red.directive";
+import { ForDirective } from './directives/for.directive';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, NavComponent, HomeComponent, ProductCrudComponent, ProductCreateComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    NavComponent,
+    HomeComponent,
+    ProductCrudComponent,
+    ProductCreateComponent,
+    RedDirective,
+    ForDirective,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -28,7 +40,7 @@ import { ProductCreateComponent } from './components/product/product-create/prod
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
