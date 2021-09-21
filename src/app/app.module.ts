@@ -14,6 +14,10 @@ import { MatCardModule } from "@angular/material/card";
 import { MatButtonModule } from "@angular/material/button";
 import { MatSnackBarModule } from "@angular/material/snack-bar"
 
+import { MatFormFieldModule } from "@angular/material/form-field"
+import { MatInputModule } from "@angular/material/input"
+import { FormsModule } from "@angular/forms"
+
 import { HttpClientModule } from "@angular/common/http";
 
 // Import components
@@ -48,7 +52,10 @@ import { ForDirective } from "./directives/for.directive";
     MatCardModule,
     MatButtonModule,
     MatSnackBarModule,
-    HttpClientModule
+    HttpClientModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
